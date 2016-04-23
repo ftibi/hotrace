@@ -22,8 +22,8 @@ $(NAME): $(OBJ) $(LIB)
 	$(CC) -o $(NAME) $(OBJ) $(CPPFLAGS)  libft.a
 	
 
-$(SRC)%.o: $(SRC)%.c
-	$(CC) $(CFLAGS) $(CPPFLAGS) -o $(SRC)%.o -c $(SRC)%.c 
+%.o: %.c
+	$(CC) $(CFLAGS) $(CPPFLAGS) -c $< 
 
 clean:
 	make clean -C ./libft

@@ -6,7 +6,7 @@
 /*   By: tfolly <tfolly@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/23 11:53:43 by tfolly            #+#    #+#             */
-/*   Updated: 2016/04/23 12:32:03 by tfolly           ###   ########.fr       */
+/*   Updated: 2016/04/23 15:24:53 by tfolly           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,3 +71,34 @@ int		search_key(t_node *root, char *key)
 			return (not_found(key));
 	}
 }
+
+int		destroy_tree(t_node **root)
+{
+	t_node	*tmp;
+
+	if (!root || !(*root))
+		return (0);
+	tmp = *root;
+	if (tmp->left)
+		destroy_tree(&tmp->left);
+	if (tmp->right)
+		destroy_tree(&tmp->right);
+	if (tmp->parent)
+	{
+		if (tmp->parent->left == tmp)
+			tmp->parent->left = 0;
+		else if (tmp->parent->right == tmp)
+			tmp->parent->right = 0;
+	}
+	destroy_node(&tmp);
+	return (0);
+}
+
+
+
+
+
+
+
+
+
