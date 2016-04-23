@@ -6,7 +6,7 @@
 /*   By: tfolly <tfolly@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/23 11:17:30 by tfolly            #+#    #+#             */
-/*   Updated: 2016/04/23 12:05:57 by tfolly           ###   ########.fr       */
+/*   Updated: 2016/04/23 13:11:28 by tfolly           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,9 @@ int	main(void)
 				add_node(root, key, value);
 		}
 	}
+	search_key(root, value);
 	while (get_next_line(0, &tmp) > 0)
-		search_key(root, key);
-	destroy_tree(root);
+		search_key(root, tmp);
+	//destroy_tree(root);
 	return (0);
 }

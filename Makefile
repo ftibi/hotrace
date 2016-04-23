@@ -10,7 +10,7 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
-CPPFLAGS = -I./includes -I./libft/includes
+CPPFLAGS = -I. -I./libft/includes
 
 all: $(LIB) $(NAME)
 
@@ -23,7 +23,7 @@ $(NAME): $(OBJ) $(LIB)
 	
 
 $(SRC)%.o: $(SRC)%.c
-	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $<
+	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $< 
 
 clean:
 	make clean -C ./libft
