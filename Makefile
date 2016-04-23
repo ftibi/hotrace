@@ -23,7 +23,7 @@ $(NAME): $(OBJ) $(LIB)
 	
 
 $(SRC)%.o: $(SRC)%.c
-	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $< 
+	$(CC) $(CFLAGS) $(CPPFLAGS) -o $(SRC)%.o -c $(SRC)%.c 
 
 clean:
 	make clean -C ./libft
