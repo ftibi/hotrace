@@ -6,13 +6,13 @@
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/23 20:09:48 by tbeauman          #+#    #+#             */
-/*   Updated: 2016/04/23 20:16:41 by tbeauman         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:57:09 by tfolly           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "hotrace.h"
 
-void infix_print_tree(t_node *root)
+void	infix_print_tree(t_node *root)
 {
 	if (!root)
 		return ;
@@ -27,7 +27,7 @@ void infix_print_tree(t_node *root)
 		infix_print_tree(root->right);
 }
 
-void prefix_print_tree(t_node *root)
+void	prefix_print_tree(t_node *root)
 {
 	if (!root)
 		return ;
@@ -42,7 +42,7 @@ void prefix_print_tree(t_node *root)
 		prefix_print_tree(root->right);
 }
 
-void suffix_print_tree(t_node *root)
+void	suffix_print_tree(t_node *root)
 {
 	if (!root)
 		return ;

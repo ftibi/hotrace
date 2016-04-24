@@ -6,7 +6,7 @@
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/23 16:40:12 by tbeauman          #+#    #+#             */
-/*   Updated: 2016/04/23 18:10:05 by tbeauman         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:56:21 by tfolly           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ int		destroy_node(t_node **node2)
 	}
 	return (0);
 }
-
 
 int		destroy_tree(t_node **root)
 {
