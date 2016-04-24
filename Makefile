@@ -14,7 +14,7 @@ CFLAGS = -Wall -Wextra -Werror
 CPPFLAGS = -I. -I./libft/includes
 
 all: $(LIB) $(NAME)
-
+	@echo "THIBAULT LIS LE README STP :)"
 $(LIB):
 	make -C ./libft
 	cp $(LIB) libft.a
