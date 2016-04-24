@@ -1,38 +1,33 @@
 NAME = hotrace
 
 SRC = main.c free_tree.c insert_tree.c search_in_tree.c \
-	verbose_tree.c rotate_tree.c depth_of_tree.c
+	verbose_tree.c rotate_tree.c depth_of_tree.c\
+	ft_strcmp.c ft_putstr.c ft_putendl.c ft_memmove.c\
+	ft_memdel.c ft_memcpy.c ft_putchar.c ft_strdel.c ft_strlen.c\
+	get_next_line.c ft_strchr.c ft_strdup.c ft_strjoin.c ft_strnew.c\
+	ft_memalloc.c
 
 OBJ = $(SRC:.c=.o)
-
-LIB = ./libft/libft.a
 
 CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
-CPPFLAGS = -I. -I./libft/includes
+CPPFLAGS = -I. 
 
-all: $(LIB) $(NAME)
-	@echo "THIBAULT LIS LE README STP :)"
-$(LIB):
-	make -C ./libft
-	cp $(LIB) libft.a
+all: $(NAME)
 
-$(NAME): $(OBJ) $(LIB)
-	$(CC) -o $(NAME) $(OBJ) $(CPPFLAGS)  libft.a
-
+$(NAME): $(OBJ)
+	$(CC) -o $(NAME) $(OBJ) $(CPPFLAGS)  
 
 %.o: %.c
 	$(CC) $(CFLAGS) $(CPPFLAGS) -c $<
 
 clean:
-	make clean -C ./libft
 	rm -fv $(OBJ)
 
 fclean: clean
-	make fclean -C ./libft
-	rm -fv $(NAME) libft.a
+	rm -fv $(NAME)
 
 re: fclean all
 
@@ -43,5 +38,5 @@ norme:
 
 test: $(LIB)
 	rm -fv test
-	$(CC) -o test  test.c $(CPPFLAGS)  libft.a
+	$(CC) -o test  test.c $(CPPFLAGS) 
 	./test
