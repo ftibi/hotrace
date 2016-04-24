@@ -6,7 +6,7 @@
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/23 11:17:30 by tfolly            #+#    #+#             */
-/*   Updated: 2016/04/24 15:49:23 by tbeauman         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:48:30 by tfolly           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,19 +30,7 @@ int	main(void)
 			read = 0;
 		else
 			add_node(&root, key, value);
-		// infix_print_tree(root);
-		// ft_putendl("\n=====NEW STEP=====");
 	}
-	// infix_print_tree(root);
-	// ft_putstr("===ROTATION HERE===\n");
-	// rotate_tree_left(&root);
-	// ft_putendl(root->key);
-	// ft_putstr("left:");
-	// ft_putendl(root->left->key);
-	// ft_putstr("right:");
-	// ft_putendl(root->right->key);
-	// ft_putstr("===ENDS HERE===\n");
-	// infix_print_tree(root);
 	if (*value)
 	{
 		search_key(root, value);

@@ -6,7 +6,7 @@
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/23 11:10:41 by tfolly            #+#    #+#             */
-/*   Updated: 2016/04/24 16:42:53 by tfolly           ###   ########.fr       */
+/*   Updated: 2016/04/24 16:53:44 by tfolly           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,18 @@ char				*ft_strdup(char const *s1);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 size_t				ft_strlen(char const *str);
 void				ft_putstr(char const *str);
+void				ft_putchar(char c);
 char				*ft_strnew(size_t size);
 char				*ft_strjoin(char const *s1, char const *s2);
 void				*ft_memalloc(size_t size);
+int					ft_strcmp(const char *str1, const char *str2);
+void				ft_strdel(char **as);
+void				ft_memdel(void **ap);
+void				ft_putendl(char const *s);
+
+
+void				*ft_memcpy(void *dst, const void *src, size_t n);
+
+
 
 #endif

@@ -6,11 +6,11 @@
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:31:21 by tfolly            #+#    #+#             */
-/*   Updated: 2016/04/23 16:20:25 by tbeauman         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:51:19 by tfolly           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "hotrace.h"
 
 int	ft_strcmp(const char *s1, const char *s2)
 {

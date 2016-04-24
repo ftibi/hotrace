@@ -6,11 +6,11 @@
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 11:50:59 by tfolly            #+#    #+#             */
-/*   Updated: 2016/04/23 16:21:28 by tbeauman         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:51:53 by tfolly           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "hotrace.h"
 
 void	ft_putstr(char const *str)
 {
