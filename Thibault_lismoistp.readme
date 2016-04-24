@@ -7,3 +7,10 @@ Sinon, j'ai presque fini d'equilibrer notre arbre, ca passera notre algo
 de recherche en complexite O(log n).
 
 L'ideal c'est de combiner la table de hash avec l'arbre AVL.
+
+Il n'y a pas le droit d'utiliser la libft. Si t'es la avant moi passe les fichiers
+a la norme et prends le temps de recopier les fonctions de la libft qu'on utilise.
+J'ai mis ma libft dans le dossier, je suis pas sur que toutes mes fonctions soient plus optis,
+fais le check.
+
+P.S: Mon GNL est mieux
