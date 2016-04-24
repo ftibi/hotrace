@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_search.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tguillot <tguillot@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/23 16:07:50 by tguillot          #+#    #+#             */
-/*   Updated: 2016/04/24 00:24:54 by tguillot         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:25:05 by tbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*solve_collisions(t_data *cols, char *key)
 	return (NULL);
 }
 
-void	ft_search(t_data **tab)
+void	ft_search(t_node **tab)
 {
 	char	*line;
 	char	*found;
@@ -36,7 +36,7 @@ void	ft_search(t_data **tab)
 		if (ft_strcmp(line, "") == 0)
 			return ;
 		nbr = ft_hachage(line);
-		found = solve_collisions(tab[nbr], line);
+		found = search_key(tab[nbr], line);
 		if (found)
 			ft_putendl(found);
 		else
@@ -46,5 +46,5 @@ void	ft_search(t_data **tab)
 		}
 	}
 	if (a == -1)
-		ft_putendl("\033[31mErreur de lecture, fichier mauvais.\033[0m");
+		ft_putendl("Erreur de lecture, fichier mauvais.");
 }

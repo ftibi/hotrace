@@ -1,37 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tab_init.c                                      :+:      :+:    :+:   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/04/23 22:56:42 by tguillot          #+#    #+#             */
-/*   Updated: 2016/04/24 16:26:02 by tbeauman         ###   ########.fr       */
+/*   Created: 2015/11/24 16:02:14 by tfolly            #+#    #+#             */
+/*   Updated: 2016/04/24 16:29:06 by tbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/hotrace.h"
+#include "hotrace.h"
 
-void	ft_tab_init(t_node **tab)
+void	ft_strdel(char **as)
 {
-	int		i;
-
-	i = 0;
-	while (i < TAB_SIZE)
+	if (*as)
 	{
-		tab[i] = NULL;
-		i++;
-	}
-}
-
-void	ft_tab_destroy(t_node **tab)
-{
-	int		i;
-
-	i = 0;
-	while (i < TAB_SIZE)
-	{
-		destroy_tree(&tab[i]);
-		i++;
+		free(*as);
+		*as = NULL;
 	}
 }

@@ -6,13 +6,13 @@
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/22 20:19:39 by justasze          #+#    #+#             */
-/*   Updated: 2016/04/24 16:07:06 by tbeauman         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:25:19 by tbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/hotrace.h"
 
-static void	ft_read(t_data **tab)
+static void	ft_read(t_node **tab)
 {
 	char	*key;
 	char	*value;
@@ -36,5 +36,6 @@ int			main(void)
 	ft_tab_init(tab);
 	ft_read(tab);
 	ft_search(tab);
+	ft_tab_destroy(tab);
 	return (0);
 }
