@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: justasze <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/22 20:19:39 by justasze          #+#    #+#             */
-/*   Updated: 2016/04/24 00:25:22 by tguillot         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:07:06 by tbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,12 @@ static void	ft_read(t_data **tab)
 		ft_stock_data(tab, value, key);
 	}
 	if (a == -1)
-		ft_putendl("\033[31mErreur de lecture, fichier mauvais.\033[0m");
+		ft_putendl("Erreur de lecture, fichier mauvais.");
 }
 
 int			main(void)
 {
-	t_data *tab[TAB_SIZE];
+	t_node *tab[TAB_SIZE];
 
 	ft_tab_init(tab);
 	ft_read(tab);

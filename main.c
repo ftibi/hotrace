@@ -6,7 +6,7 @@
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/23 11:17:30 by tfolly            #+#    #+#             */
-/*   Updated: 2016/04/24 02:29:21 by tbeauman         ###   ########.fr       */
+/*   Updated: 2016/04/24 15:49:23 by tbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	main(void)
 		if (!ft_strcmp(key, ""))
 			read = 0;
 		else
-			add_node(0, &root, key, value);
+			add_node(&root, key, value);
 		// infix_print_tree(root);
 		// ft_putendl("\n=====NEW STEP=====");
 	}

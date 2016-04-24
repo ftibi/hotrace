@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_stock_data.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tguillot <tguillot@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/23 22:57:15 by tguillot          #+#    #+#             */
-/*   Updated: 2016/04/24 00:19:21 by tguillot         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:08:06 by tbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,5 @@ void	ft_stock_data(t_data **tab, char *value, char *key)
 	int		index;
 
 	index = ft_hachage(key);
-	add_maillon(&tab[index], new_maillon(value, key));
+	add_node(&tab[index], key, value);
 }

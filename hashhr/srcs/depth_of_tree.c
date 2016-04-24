@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   depth_of_tree.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/03/05 16:30:22 by tguillot          #+#    #+#             */
-/*   Updated: 2016/04/24 15:54:37 by tbeauman         ###   ########.fr       */
+/*   Created: 2016/04/23 20:46:48 by tbeauman          #+#    #+#             */
+/*   Updated: 2016/04/24 02:07:38 by tbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/hotrace.h"
+#include "hotrace.h"
 
-size_t	ft_strlen(const char *s)
+size_t	max(size_t a, size_t b)
 {
-	size_t a;
+	return (a > b ? a : b);
+}
 
-	a = 0;
-	while (s[a] != '\0')
-		a++;
-	return (a);
+size_t		depth(t_node *root)
+{
+	if (!root)
+		return (0);
+	return (root->depth);
 }

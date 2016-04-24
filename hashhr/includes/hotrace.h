@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   hotrace.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tguillot <tguillot@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/24 00:44:20 by tguillot          #+#    #+#             */
-/*   Updated: 2016/04/24 00:44:22 by tguillot         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:05:00 by tbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,15 @@ typedef struct		s_data
 	char			*data;
 	struct s_data	*next;
 }					t_data;
+
+typedef struct		s_node
+{
+	char			*key;
+	char			*value;
+	int				depth;
+	struct s_node	*left;
+	struct s_node	*right;
+}					t_node;
 
 int					get_next_line(int const fd, char **line);
 void				ft_putchar(char c);

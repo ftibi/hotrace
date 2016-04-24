@@ -1,6 +1,6 @@
 NAME = hotrace
 
-SRC = main.c free_tree.c alloc_tree.c search_in_tree.c \
+SRC = main.c free_tree.c insert_tree.c search_in_tree.c \
 	verbose_tree.c rotate_tree.c depth_of_tree.c
 
 OBJ = $(SRC:.c=.o)
