@@ -1,6 +1,7 @@
-NAME = hotrace 
+NAME = hotrace
 
-SRC = main.c nodes.c tree.c
+SRC = main.c free_tree.c alloc_tree.c search_in_tree.c \
+	verbose_tree.c rotate_tree.c depth_of_tree.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -20,10 +21,10 @@ $(LIB):
 
 $(NAME): $(OBJ) $(LIB)
 	$(CC) -o $(NAME) $(OBJ) $(CPPFLAGS)  libft.a
-	
+
 
 %.o: %.c
-	$(CC) $(CFLAGS) $(CPPFLAGS) -c $< 
+	$(CC) $(CFLAGS) $(CPPFLAGS) -c $<
 
 clean:
 	make clean -C ./libft
@@ -40,7 +41,7 @@ re: fclean all
 norme:
 	norminette $(SRC) hotrace.h
 
-test: $(LIB) 
+test: $(LIB)
 	rm -fv test
 	$(CC) -o test  test.c $(CPPFLAGS)  libft.a
 	./test

@@ -1,0 +1,9 @@
+Dans le dossier hashhr y a un hotrace valide et plus rapide que celui
+que tu as fait hier, on l'a implemente avec tguillot tout a l'heure.
+Il utilise une table de hashage pour stocker les cles avec un algo qui
+attribue un int a un char * (je t'expliquerai tout en detail).
+
+Sinon, j'ai presque fini d'equilibrer notre arbre, ca passera notre algo
+de recherche en complexite O(log n).
+
+L'ideal c'est de combiner la table de hash avec l'arbre AVL.

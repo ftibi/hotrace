@@ -1,0 +1,190 @@
+deux => 2
+-> it's a leaf
+
+
+=====NEW STEP=====
+deux => 2
+trois => 3
+-> it's a leaf
+
+
+=====NEW STEP=====
+deux => 2
+quatre => 4
+-> it's a leaf
+
+trois => 3
+
+=====NEW STEP=====
+cinq => 5
+-> it's a leaf
+
+deux => 2
+quatre => 4
+-> it's a leaf
+
+trois => 3
+
+=====NEW STEP=====
+cinq => 5
+-> it's a leaf
+
+deux => 2
+quatre => 4
+six => 6
+-> it's a leaf
+
+trois => 3
+
+=====NEW STEP=====
+cinq => 5
+-> it's a leaf
+
+deux => 2
+quatre => 4
+sept => 7
+-> it's a leaf
+
+six => 6
+trois => 3
+
+=====NEW STEP=====
+cinq => 5
+-> it's a leaf
+
+deux => 2
+huit => 8
+-> it's a leaf
+
+quatre => 4
+sept => 7
+-> it's a leaf
+
+six => 6
+trois => 3
+
+=====NEW STEP=====
+cinq => 5
+-> it's a leaf
+
+deux => 2
+huit => 8
+neuf => 9
+-> it's a leaf
+
+quatre => 4
+sept => 7
+-> it's a leaf
+
+six => 6
+trois => 3
+
+=====NEW STEP=====
+cinq => 5
+-> it's a leaf
+
+deux => 2
+dix => 10
+-> it's a leaf
+
+huit => 8
+neuf => 9
+-> it's a leaf
+
+quatre => 4
+sept => 7
+-> it's a leaf
+
+six => 6
+trois => 3
+
+=====NEW STEP=====
+cinq => 5
+-> it's a leaf
+
+deux => 2
+dix => 10
+-> it's a leaf
+
+huit => 8
+neuf => 9
+-> it's a leaf
+
+quatre => 4
+sept => 7
+-> it's a leaf
+
+six => 6
+trois => 3
+un => 1
+-> it's a leaf
+
+
+=====NEW STEP=====
+cinq => 5
+-> it's a leaf
+
+deux => 2
+dix => 10
+-> it's a leaf
+
+huit => 8
+neuf => 9
+-> it's a leaf
+
+quatre => 4
+sept => 7
+-> it's a leaf
+
+six => 6
+trois => 3
+un => 1
+-> it's a leaf
+
+
+=====NEW STEP=====
+cinq => 5
+-> it's a leaf
+
+deux => 2
+dix => 10
+-> it's a leaf
+
+huit => 8
+neuf => 9
+-> it's a leaf
+
+quatre => 4
+sept => 7
+-> it's a leaf
+
+six => 6
+trois => 3
+un => 1
+-> it's a leaf
+
+===ROTATION HERE===
+trois
+left:deux
+right:un
+===ENDS HERE===
+cinq => 5
+-> it's a leaf
+
+deux => 2
+dix => 10
+-> it's a leaf
+
+huit => 8
+neuf => 9
+-> it's a leaf
+
+quatre => 4
+sept => 7
+-> it's a leaf
+
+six => 6
+trois => 3
+un => 1
+-> it's a leaf
+
