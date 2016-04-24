@@ -6,7 +6,7 @@
 /*   By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/23 22:57:15 by tguillot          #+#    #+#             */
-/*   Updated: 2016/04/24 16:08:06 by tbeauman         ###   ########.fr       */
+/*   Updated: 2016/04/24 16:23:51 by tbeauman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	add_maillon(t_data **list, t_data *new)
 	*list = new;
 }
 
-void	ft_stock_data(t_data **tab, char *value, char *key)
+void	ft_stock_data(t_node **tab, char *value, char *key)
 {
 	int		index;
 

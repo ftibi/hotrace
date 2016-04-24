@@ -1,14 +1,14 @@
-#******************************************************************************#
+# **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tguillot <tguillot@student.42.fr>          +#+  +:+       +#+         #
+#    By: tbeauman <tbeauman@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/04/24 00:56:34 by tguillot          #+#    #+#              #
-#    Updated: 2016/04/24 00:56:35 by tguillot         ###   ########.fr        #
+#    Updated: 2016/04/24 16:29:19 by tbeauman         ###   ########.fr        #
 #                                                                              #
-#******************************************************************************#
+# **************************************************************************** #
 
 NAME = hotrace
 
@@ -37,6 +37,13 @@ SRCS_NAME = main.c\
 			ft_putnbrdl.c\
 			ft_iterative_power.c\
 			ft_search.c\
+			search_in_tree.c\
+			rotate_tree.c\
+			insert_tree.c\
+			depth_of_tree.c\
+			free_tree.c\
+			ft_strdel.c\
+			ft_memdel.c
 
 SRCS_PATH = srcs/
 
@@ -70,7 +77,7 @@ fclean: clean
 
 re: fclean all
 
-odir: 
+odir:
 	@mkdir -p objs/
 
 .PHONY: clean fclean re odir
